@@ -1,0 +1,519 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Ubuntu", sans-serif;
+    user-select: none;
+}
+
+body {
+    background-color: #000;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+button {
+    outline: none;
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    background-color: red;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    font-weight: bold;
+    border-radius: 4px;
+    text-transform: capitalize;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: rgba(255, 0, 0, 0.573);
+}
+
+header {
+    width: 100vw;
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 72vh;
+    overflow: hidden;
+}
+
+header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image:
+        linear-gradient(188deg, rgb(0 0 0) 0%, rgb(0 0 0 / 78%) 20%, rgb(0 0 0 / 47%) 50%, rgb(0 0 0 / 86%) 80%, rgb(0 0 0 / 65%) 100%),
+        url("../images/banner-large.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-position: bottom bottom; */
+    background-position: 50% 72%;
+    /* bottom right */
+    transform: scale(1.24);
+    z-index: -1;
+}
+
+
+
+header nav {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 78%;
+    padding: 14px 0;
+}
+
+header nav .logo img {
+    width: 160px;
+}
+
+.custom-select {
+    position: relative;
+    display: inline-block;
+    background-color: transparent;
+    border: 1px solid #cccccc6a;
+    border-radius: 4px;
+    font-size: 18px;
+    margin-right: 18px;
+}
+
+.select-icon {
+    position: absolute;
+    top: 25%;
+    left: 10px;
+}
+
+.arrow {
+    position: absolute;
+    right: 10px;
+    top: 13%;
+    cursor: pointer;
+    z-index: 1;
+}
+
+select {
+    appearance: none;
+    font-size: 15px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    padding: 0;
+    margin: 0;
+    color: white;
+    padding: 7px 34px;
+    z-index: 2;
+    position: relative;
+    cursor: pointer;
+}
+
+header .hero {
+    position: relative;
+    z-index: 2;
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+header .hero h1 {
+    font-size: 48px;
+    color: rgb(255, 255, 255);
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+
+header .hero p:first-of-type {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 2rem;
+    margin-bottom: 20px;
+}
+
+header .hero p:last-of-type {
+    font-weight: 400;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+}
+
+.floating-label {
+    position: relative;
+    display: inline-block;
+}
+
+.floating-label input {
+    outline: none;
+    background-color: rgba(0, 0, 0, 0.278);
+    border: 1px solid gray;
+    width: 370px;
+    color: #e3cdcdc6;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 4px;
+    padding: 15px 15px 5px;
+    height: 53px;
+}
+
+.floating-label label {
+    position: absolute;
+    top: 30%;
+    left: 4%;
+    font-size: 16px;
+    color: #e3cdcdc6;
+    transition: all 0.2s ease;
+    pointer-events: none;
+}
+
+.floating-label input:focus+label,
+.floating-label input:not(:placeholder-shown)+label {
+    font-size: 12px;
+    font-weight: 400;
+    color: #e3cdcdc6;
+    top: 8px;
+    left: 4%;
+}
+
+.floating-label input:focus {
+    outline: 2px solid white;
+}
+
+.hero button {
+    padding: 12px 26px;
+    font-weight: 500;
+    font-size: 24px;
+    gap: 8px;
+    margin-left: 8px;
+}
+
+.divider {
+    height: 8px;
+    background: rgb(120 111 111 / 42%);
+    width: 100%;
+}
+
+section {
+    width: 78%;
+    margin: auto;
+    padding: 4rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    min-height: 68vh;
+}
+
+.left {
+    width: 48%;
+}
+
+.right {
+    width: 48%;
+    position: relative;
+}
+
+.right img {
+    width: 100%;
+}
+
+.right .video-box {
+    z-index: -1;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    max-width: 63%;
+    max-height: 47%;
+    position: absolute;
+    top: 34%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.left h1 {
+    font-size: 48px;
+    font-weight: 900;
+    margin-bottom: 24px;
+}
+
+.left p {
+    font-size: 24px;
+}
+
+.right .img-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 0.75rem;
+    border: 2px solid rgba(128, 128, 128, 0.7);
+    box-shadow: 0 0 2em 0 rgb(0, 0, 0);
+    border-radius: 0.75rem;
+    width: 55%;
+    height: 100px;
+    background-color: black;
+    position: absolute;
+    bottom: 18%;
+    left: 50%;
+    z-index: 99;
+    transform: translate(-50%, 50%);
+}
+
+.right .img-card>div {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    gap: 8px;
+}
+
+.right .img-card div h2 {
+    font-size: 16px;
+}
+
+.right .img-card div p {
+    font-size: 14px;
+    color: rgb(0, 113, 235);
+    margin-top: 4px;
+}
+
+
+.right .img-card img {
+    aspect-ratio: 1;
+    height: 100%;
+    width: auto;
+}
+
+.faq {
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.faq h1 {
+    font-size: 48px;
+    margin: 30px 0;
+}
+
+.faq-item {
+    width: 100%;
+    margin-bottom: 8px;
+}
+
+.faq-item .question {
+    padding: 23px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 24px;
+    color: white;
+    font-weight: 400;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    background-color: #2d2d2d;
+}
+
+.faq-item .question:hover {
+    background-color: #414141;
+}
+
+.faq-item .answer {
+    margin-top: 2px;
+    font-size: 24px;
+    color: white;
+    font-weight: 400;
+    background-color: #2D2D2D;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+}
+
+.faq-item .answer.show {
+    max-height: 1000px;
+    opacity: 1;
+    padding: 23px;
+}
+
+.faq-item .answer p:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.center {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.center p {
+    font-size: 20px;
+    font-weight: 400;
+    margin: 20px;
+}
+
+footer {
+    width: 78%;
+    margin: auto;
+    padding: 4rem 0;
+}
+
+footer p {
+    margin: 20px 0;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+footer p span {
+    text-decoration: underline;
+}
+
+.grid-4 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 4px;
+}
+
+.grid-4 ul li {
+    list-style: none;
+    text-decoration: underline;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.grid-4 ul:first-child li:last-child {
+    text-decoration: none;
+}
+
+
+@media only screen and (max-width: 992px) {
+    .grid-4 {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 25px 20px;
+    }
+
+    footer p {
+        margin-bottom: 50px;
+    }
+
+    section {
+        flex-direction: column;
+        width: 85%;
+    }
+
+    .left {
+        width: 100%;
+    }
+
+    .right {
+        width: 100%;
+    }
+
+
+    .floating-label input {
+        width: 100%;
+    }
+
+    .hero button {
+        padding: 8px 20px;
+        font-size: 16px;
+        margin: 20px auto;
+    }
+
+    .center {
+        text-align: center;
+    }
+
+    .center p {
+        font-size: 18px;
+        line-height: 1.6rem;
+    }
+
+    .faq .question p {
+        font-size: 17px;
+    }
+
+    .faq .answer p {
+        font-size: 16px;
+    }
+
+    .faq .question span svg {
+        width: 20px;
+    }
+
+    .faq h1,
+    section .left h1 {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    section .left p {
+        font-size: 18px;
+        text-align: center;
+        line-height: 1.4rem;
+    }
+
+    section .right {
+        margin: 50px 0;
+    }
+
+    .right .img-card {
+        width: 90%;
+        height: 70px;
+    }
+
+    header nav {
+        width: 90%;
+    }
+
+    header nav .logo img {
+        width: 90px;
+    }
+
+    .custom-select {
+        margin-right: 3px;
+    }
+
+    header .hero {
+        width: 80%;
+    }
+
+    header .hero h1 {
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+
+    header .hero p:first-of-type {
+        font-size: 18px;
+    }
+
+    header .hero p:last-of-type {
+        font-size: 16px;
+    }
+
+}

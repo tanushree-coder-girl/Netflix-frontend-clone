@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix</title>
+    <link rel="stylesheet" href="./css/login.css">
+    <link rel="shortcut icon" href="./images/icon.png" type="image/x-icon">
+
+</head>
+
+
+<body>
+    <main>
+        <nav>
+            <img width="156" src="./images/netflix.png" alt="">
+        </nav>
+
+        <div class="center-div">
+            <div class="login-form">
+                <h1>Sign in</h1>
+                <form>
+                    <div class="floating-label">
+                        <input type="search" id="email" placeholder=" " required>
+                        <label for="email">Email or mobile number</label>
+                    </div>
+                    <div class="floating-label">
+                        <input type="search" id="email" placeholder=" " required>
+                        <label for="email">Password</label>
+                    </div>
+                    <input type="submit" value="Sign in">
+                    <p class="or">or</p>
+                    <button class="code">Use a sign-in code</button>
+
+                    <div class="fp">
+                        Forgot password?
+                    </div>
+                    <div class="remember-me">
+                        <input type="checkbox" name="remember" id="remember">
+                        <label for="remember">Remember me</label>
+                    </div>
+
+                    <div class="text-light">
+                        New to Netflix? <a href="">Sign up now.</a>
+                    </div>
+                    <p class="bottom-text">This page is protected by Google reCAPTCHA to ensure you're not a bot.
+                        <span>Learn more.</span>
+                    </p>
+                </form>
+
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <p>Questions? Call <span>000-800-919-1694</span></p>
+
+            <div class="grid-4">
+                <ul>
+                    <li>FAQ</li>
+                    <li>Cookie preferences</li>
+                    <li>
+                        <div class="custom-select">
+                            <span class="select-icon">
+                                <img src="./images/lang.svg" alt="Language icon">
+                            </span>
+                            <span class="arrow">
+                                <img src="./images/down-arrow-svgrepo-com.svg" alt="Down arrow">
+                            </span>
+                            <select name="language" id="language-select">
+                                <option lang="en" label="English" value="en-IN" selected>English</option>
+                                <option lang="hi" label="हिन्दी" value="hi-IN">हिन्दी</option>
+                            </select>
+                        </div>
+                    </li>
+                </ul>
+                <ul>
+                    <li>Help Center</li>
+                    <li>Corporate Information</li>
+                </ul>
+                <ul>
+                    <li>Terms of use</li>
+                </ul>
+                <ul>
+                    <li>Privacy</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

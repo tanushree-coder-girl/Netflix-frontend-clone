@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Ubuntu", sans-serif;
+    user-select: none;
+}
+
+body {
+    background-color: #000;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+main {
+    height: 100vh;
+    position: relative;
+    width: 100vw;
+    overflow: hidden;
+}
+
+main::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image:
+        linear-gradient(188deg, rgba(0, 0, 0, 0.454) 0%, rgba(0, 0, 0, 0.54) 20%, rgba(0, 0, 0, 0.357) 50%, rgba(0, 0, 0, 0.351) 80%, rgb(0 0 0 / 65%) 100%),
+        url("../images/banner-large.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 72%;
+    transform: scale(1.1);
+    z-index: -1;
+}
+
+nav {
+    width: 78%;
+    margin: auto;
+    position: relative;
+    z-index: 2;
+    padding: 14px 0;
+}
+
+.center-div {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-top: 40px;
+}
+
+.login-form {
+    border-radius: 4px;
+    background-color: #020304c8;
+    /* width: 24%; */
+    width: 450px;
+    height: 40%;
+    padding: 50px 65px 120px 75px;
+}
+
+.login-form h1 {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.floating-label {
+    position: relative;
+    width: 100%;
+}
+
+.floating-label input {
+    outline: none;
+    background-color: transparent;
+    border: 1px solid #ffffff67;
+    width: 100%;
+    color: #e3cdcdc6;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 4px;
+    padding: 15px 15px 5px;
+    height: 53px;
+    margin-bottom: 15px;
+}
+
+.floating-label label {
+    position: absolute;
+    top: 26%;
+    left: 4%;
+    font-size: 16px;
+    color: #e3cdcdc6;
+    transition: all 0.2s ease;
+    pointer-events: none;
+}
+
+.floating-label input:focus+label,
+.floating-label input:not(:placeholder-shown)+label {
+    font-size: 12px;
+    font-weight: 400;
+    color: #e3cdcdc6;
+    top: 8px;
+    left: 4%;
+}
+
+.floating-label input:focus {
+    outline: 1.3px solid white;
+}
+
+.or {
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    color: #ffffffaa;
+}
+
+input[type="submit"],
+button {
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 37px;
+    border-radius: 4px;
+    color: white;
+    background-color: #ff0000;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.code {
+    background-color: #3F3A3A;
+    font-weight: 500;
+}
+
+.fp {
+    text-align: center;
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 20px 0;
+}
+
+:checked {
+    font-size: 40px;
+}
+
+.text-light {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.text-light a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+
+.bottom-text {
+    color: rgb(140, 140, 140);
+    font-size: 13px;
+    line-height: 1.1rem;
+}
+
+.bottom-text span {
+    color: rgb(0, 113, 235);
+    cursor: pointer;
+}
+
+.bottom-text span:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background: linear-gradient(341deg, #000, #050a10c8);
+    margin-top: -120px;
+}
+
+.footer {
+    width: 78%;
+    margin: auto;
+    padding: 3rem 0;
+}
+
+.footer p {
+    margin: 20px 0;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.footer p span {
+    text-decoration: underline;
+}
+
+.grid-4 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 4px;
+}
+
+.grid-4 ul li {
+    list-style: none;
+    text-decoration: underline;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.grid-4 ul:first-child li:last-child {
+    text-decoration: none;
+}
+
+.custom-select {
+    position: relative;
+    display: inline-block;
+    background-color: transparent;
+    border: 1px solid #cccccc6a;
+    border-radius: 4px;
+    font-size: 18px;
+    margin-right: 18px;
+}
+
+.select-icon {
+    position: absolute;
+    top: 25%;
+    left: 10px;
+}
+
+.arrow {
+    position: absolute;
+    right: 10px;
+    top: 13%;
+    cursor: pointer;
+    z-index: 1;
+}
+
+select {
+    appearance: none;
+    font-size: 15px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    padding: 0;
+    margin: 0;
+    color: white;
+    padding: 7px 34px;
+    z-index: 2;
+    position: relative;
+    cursor: pointer;
+}
+
+
+@media only screen and (max-width:1492px) {
+    footer {
+        margin-top: -60px;
+    }
+}
+
+
+@media only screen and (max-width:992px) {
+    .login-form {
+        width: 90%;
+    }
+
+    .grid-4 {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 25px 20px;
+    }
+
+    footer p {
+        margin-bottom: 50px;
+    }
+
+    footer {
+        margin-top: -70px;
+    }
+}
