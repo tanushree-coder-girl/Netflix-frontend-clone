@@ -4,7 +4,7 @@ This project is a clone of the Netflix landing page/login page, created using pu
 
 ## Live Demo
 
-You can view the live demo of the project [here](your-live-demo-link).
+You can view the live demo of the project [here](https://netflix-clone-ui.netlify.app/).
 
 ## Features
 
@@ -30,6 +30,11 @@ To get a local copy up and running, follow these steps:
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/your-username/netflix-clone.git
+   git clone https://github.com/tanushree-coder-girl/Netflix-frontend-clone.git
 
-2. 
+2. Open index.html in your web browser to view the project.
+
+## Usage
+
+This project can be used as a starting point for learning web development or as a template for creating similar landing pages.
+
