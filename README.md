@@ -54,4 +54,4 @@ Distributed under the MIT License. See LICENSE for more information.
 
 ## Project Link
 
-https://netflix-clone-ui.netlify.app/
+https://netflix-frontend-clon-git-5ad5cb-sparksthemesgmailcoms-projects.vercel.app/
