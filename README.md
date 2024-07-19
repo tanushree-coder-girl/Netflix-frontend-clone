@@ -4,7 +4,7 @@ This project is a clone of the Netflix landing page/login page, created using pu
 
 ## Live Demo
 
-You can view the live demo of the project [here](https://netflix-clone-ui.netlify.app/).
+You can view the live demo of the project [here](https://netflix-frontend-clon-git-5ad5cb-sparksthemesgmailcoms-projects.vercel.app/).
 
 ## Features
 
